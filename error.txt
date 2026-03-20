@@ -1,1 +1,23 @@
+Note: Using POSIX realtime
+INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+note: MAXV     max: 15.000 units/sec 900.000 units/min
+note: LJOG     max: 15.000 units/sec 900.000 units/min
+note: LJOG default: 2.500 units/sec 150.000 units/min
+Waiting for component 'inihal' to become ready....INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+..........INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+..........INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+..........INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+..........INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+.....A configuration error is preventing LinuxCNC from starting.
+More information may be available when running from a terminal.
+.....INIFILE: ERR_CONVERSION, section=JOINT_0, tag=HOME_SEARCH_VEL, num=1, lineNo=99
+.1854
+..1886
+.HAL: ERROR: exit called before init
+<commandline>:0: waitpid failed milltask inihal
 
+<commandline>:0: milltask exited without becoming ready
+Stopping realtime threads
+Unloading hal components
+Note: Using POSIX realtime
