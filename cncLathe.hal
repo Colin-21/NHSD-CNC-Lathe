@@ -49,6 +49,8 @@ loadrt stepgen step_type=0,0
 addf stepgen.make-pulses    base-thread
 addf hal_pi_gpio.read       base-thread
 addf hal_pi_gpio.write      base-thread
+loadrt xor2 count=1
+addf xor2.0 servo-thread
 
 addf stepgen.capture-position   servo-thread
 addf motion-command-handler     servo-thread
@@ -76,6 +78,9 @@ net spindle-on spindle.0.on => hal_pi_gpio.pin-18-out
 
 # setp hal_pi_gpio.pin-37-out-invert true
 # net xenable => hal_pi_gpio.pin-37-out
+setp xor2.0.in0 1
+net xenable => xor2.0.in1
+net x-not-enable xor2.0.out => hal_pi_gpio.pin-37-out
 
 
 ##############################################
