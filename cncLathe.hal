@@ -74,8 +74,8 @@ net spindle-on spindle.0.on => hal_pi_gpio.pin-18-out
 # LinuxCNC amp-enable-out is HIGH when axis is enabled, so we invert:
 # GPIO HIGH (axis enabled) → inverted → GPIO outputs LOW → ENA- pulled LOW → driver ON
 
-setp hal_pi_gpio.pin-37-out-invert true
-net xenable => hal_pi_gpio.pin-37-out
+# setp hal_pi_gpio.pin-37-out-invert true
+# net xenable => hal_pi_gpio.pin-37-out
 
 
 ##############################################
