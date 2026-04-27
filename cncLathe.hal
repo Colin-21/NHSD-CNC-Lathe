@@ -41,7 +41,7 @@ loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EM
 # Outputs: pin-18(spindle), pin-19(xdir), pin-21(xstep),
 #          pin-31(zstep), pin-35(zdir), pin-37(enable)
 # Inputs:  pin-26(x-home), pin-33(z-home)
-loadrt hal_pi_gpio dir=21102992 exclude=0
+loadrt hal_pi_gpio dir=58717087 exclude=0
 
 # 2-axis stepgen (X and Z only — no Y on lathe)
 loadrt stepgen step_type=0,0
